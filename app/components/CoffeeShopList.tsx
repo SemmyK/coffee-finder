@@ -28,6 +28,7 @@ function CoffeeShopList({
 
 	useEffect(() => {
 		handleGeolocation()
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	useEffect(() => {
