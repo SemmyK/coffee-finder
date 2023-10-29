@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		id,
 		'43.859150989950386',
 		'18.430064731346405',
-		'8',
+		'10',
 		'RATING'
 	)
 	// console.log(id, coffeeShop)
