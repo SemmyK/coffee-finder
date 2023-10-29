@@ -5,9 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
 
+import spill from '../../../public/spill.png'
 import star from '../../../public/icons/star.svg'
 import places from '../../../public/icons/places.svg'
 import nearMe from '../../../public/icons/nearMe.svg'
+import Button from '@/app/components/Button'
 
 type Props = {
 	params: { id: string }
@@ -69,6 +71,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function SingleCoffeeShop({ params }: { params: { id: string } }) {
 	const coffeeShopData: any = await getCoffeeShopData(params.id)
+
+	if (!coffeeShopData) {
+		return (
+			<div className='flex flex-column flex-wrap justify-center items-center text-center'>
+				<h2 className=' mt-10 w-full text-4xl text-mid-brown font-bold'>
+					Something went wrong! Could not find data.
+				</h2>
+				<div className='w-full mx-auto text-center'>
+					<Image
+						src={spill}
+						alt='spilled coffee'
+						width={300}
+						height={300}
+						className='block w-fit mx-auto'
+					/>
+				</div>
+				<div className='w-full '>
+					<Link href='/'>
+						<Button text='Back to Homepage' />
+					</Link>
+				</div>
+			</div>
+		)
+	}
 
 	return (
 		coffeeShopData && (
