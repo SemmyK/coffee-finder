@@ -7,7 +7,7 @@ async function getData() {
 		const coffeeShops = await getCoffeeShops(
 			'43.859150989950386',
 			'18.430064731346405',
-			'8',
+			'15',
 			'RATING'
 		)
 		if (coffeeShops) {

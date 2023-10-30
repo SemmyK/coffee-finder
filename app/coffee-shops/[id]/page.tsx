@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 	const coffeeShops = await getCoffeeShops(
 		'43.859150989950386',
 		'18.430064731346405',
-		'8',
+		'15',
 		'RATING'
 	)
 
@@ -35,7 +35,7 @@ async function getCoffeeShopData(id: string) {
 		id,
 		'43.859150989950386',
 		'18.430064731346405',
-		'8',
+		'15',
 		'RATING'
 	)
 	if (coffeeShopInfo) {
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		id,
 		'43.859150989950386',
 		'18.430064731346405',
-		'10',
+		'15',
 		'RATING'
 	)
 	// console.log(id, coffeeShop)

@@ -10,6 +10,7 @@ export async function getPhotos() {
 	const result = await api.search.getPhotos({
 		query: 'coffee',
 		orientation: 'landscape',
+		perPage: 20,
 	})
 
 	if (result.status !== 200) {
