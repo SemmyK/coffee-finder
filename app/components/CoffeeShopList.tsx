@@ -72,9 +72,9 @@ function CoffeeShopList({
 					<div className='text-dark-brown'>Something went wrong: {error}</div>
 				)}
 			</div>
-			<h1 className='my-16 text-bright-brown font-bold text-2xl md:text-3xl lg:text-4xl text-center'>
+			{/* <h1 className='my-16 text-bright-brown font-bold text-2xl md:text-3xl lg:text-4xl text-center'>
 				{nearCoffeeShops ? '' : title}
-			</h1>
+			</h1> */}
 			{!nearCoffeeShops && (
 				<section className='grid grid-cols-1  md:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4'>
 					{!nearCoffeeShops &&
