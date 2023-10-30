@@ -26,27 +26,27 @@ function CoffeeShopList({
 		null
 	)
 
-	useEffect(() => {
-		handleGeolocation()
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	// useEffect(() => {
+	// 	handleGeolocation()
+	// 	// eslint-disable-next-line react-hooks/exhaustive-deps
+	// }, [])
 
-	useEffect(() => {
-		const handleLocation = async () => {
-			try {
-				if (latitude !== '' && longitude !== '') {
-					const data = await getCoffeeShops(latitude, longitude, '10', 'RATING')
-					if (data) {
-						setNearCoffeeShops(data)
-					}
-				}
-			} catch (error) {
-				console.log(error)
-			}
-		}
+	// useEffect(() => {
+	// 	const handleLocation = async () => {
+	// 		try {
+	// 			if (latitude !== '' && longitude !== '') {
+	// 				const data = await getCoffeeShops(latitude, longitude, '10', 'RATING')
+	// 				if (data) {
+	// 					setNearCoffeeShops(data)
+	// 				}
+	// 			}
+	// 		} catch (error) {
+	// 			console.log(error)
+	// 		}
+	// 	}
 
-		handleLocation()
-	}, [latitude, longitude])
+	// 	handleLocation()
+	// }, [latitude, longitude])
 
 	const handleClick = async () => {
 		try {

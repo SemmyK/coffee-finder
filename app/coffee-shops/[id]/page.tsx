@@ -17,8 +17,8 @@ type Props = {
 
 export async function generateStaticParams() {
 	const coffeeShops = await getCoffeeShops(
-		'43.99086416589068',
-		'18.1823581224289',
+		'43.859150989950386',
+		'18.430064731346405',
 		'8',
 		'RATING'
 	)
