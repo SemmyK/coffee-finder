@@ -17,8 +17,8 @@ type Props = {
 
 export async function generateStaticParams() {
 	const coffeeShops = await getCoffeeShops(
-		'43.859150989950386',
-		'18.430064731346405',
+		'40.77900763464923',
+		'-73.97403465514655',
 		'15',
 		'RATING'
 	)
@@ -33,8 +33,8 @@ export async function generateStaticParams() {
 async function getCoffeeShopData(id: string) {
 	const coffeeShopInfo: Array<CoffeeShop> = await getCoffeeShop(
 		id,
-		'43.859150989950386',
-		'18.430064731346405',
+		'40.77900763464923',
+		'-73.97403465514655',
 		'15',
 		'RATING'
 	)
@@ -50,8 +50,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	// fetch data
 	const coffeeShop = await getCoffeeShop(
 		id,
-		'43.859150989950386',
-		'18.430064731346405',
+		'40.77900763464923',
+		'-73.97403465514655',
 		'15',
 		'RATING'
 	)

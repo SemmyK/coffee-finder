@@ -12,7 +12,7 @@ function Banner() {
 					</span>
 				</h1>
 				<p className='text-bright-brown  font-bold text-2xl md:text-3xl lg:text-4xl my-5 '>
-					Discover coffee shops in Sarajevo.
+					Discover coffee shops in New York.
 				</p>
 			</div>
 		</section>
