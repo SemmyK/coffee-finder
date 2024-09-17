@@ -5,8 +5,8 @@ import CoffeeShopList from './components/CoffeeShopList'
 async function getData() {
 	try {
 		const coffeeShops = await getCoffeeShops(
-			'40.77900763464923',
-			'-73.97403465514655',
+			'43.849968685305534',
+			'18.36748879227635',
 			'15',
 			'RATING'
 		)
